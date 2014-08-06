@@ -76,7 +76,7 @@ lint:
 	./lint.sh
 
 testmigrations:
-	pip install -r requirements_vagrant.txt
+	pip install -r requirements_vagrant.txt --allow-external mysql-connector-python
 	cd sites/sandbox && ./test_migrations.sh
 
 # It is important that this target only depends on install
